@@ -11,8 +11,6 @@ import org.springframework.stereotype.Service;
 public class ManagerService {
     private final ManagerRepository repository;
     private final EmployeeRepository employeeRepository;
-
-
     @Autowired
     public ManagerService(ManagerRepository repository, EmployeeRepository employeeRepository) {
         this.repository = repository;

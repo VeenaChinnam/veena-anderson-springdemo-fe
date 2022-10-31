@@ -10,8 +10,6 @@ import org.springframework.web.bind.annotation.*;
 @CrossOrigin
 public class ManagerController {
     private final ManagerService service;
-
-
     @Autowired
     public ManagerController(ManagerService service) {
         this.service = service;

@@ -16,7 +16,6 @@ public class EmployeeService {
         this.repository = repository;
         this.managerService = managerService;
     }
-
     public void addNewEmployee(Employee employee) {
         repository.save(employee);
     }

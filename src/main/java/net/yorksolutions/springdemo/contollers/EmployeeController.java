@@ -41,8 +41,6 @@ public class EmployeeController {
                 .getById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
-
-
     static class Message {
 
         public String message;
