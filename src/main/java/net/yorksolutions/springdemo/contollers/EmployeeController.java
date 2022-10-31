@@ -24,8 +24,10 @@ public class EmployeeController {
     }
 
     @PostMapping
-    void addNewEmployee(@RequestBody Employee employee) {
+    Employee addNewEmployee(@RequestBody Employee employee) {
+        System.out.println("inside backend call to service");
         service.addNewEmployee(employee);
+        return employee;
     }
 
     @GetMapping
@@ -50,6 +52,7 @@ public class EmployeeController {
 
     @DeleteMapping("/{id}")
     Message deleteById(@PathVariable Long id) {
+
         return new Message(service.deleteById(id) ? "Success" : "Fail");
     }
 }

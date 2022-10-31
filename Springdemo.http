@@ -1,0 +1,42 @@
+#MANAGER REQUESTS
+###
+POST http://localhost:8080/api/manager/?managersName=Jerry
+
+###
+GET http://localhost:8080/api/manager
+
+###
+PUT http://localhost:8080/api/manager/?manager_id=7&employee_id=3
+
+###
+POST http://localhost:8080/api/manager/rel/?manager_id=7&employee_id=3
+
+###
+#EMPLOYEE REQUESTS
+###
+
+###
+POST http://localhost:8080/api/employee
+Content-Type: application/json
+
+{
+  "name" : "will",
+  "role" : "cube dweller"
+}
+
+###
+GET http://localhost:8080/api/employee
+
+
+###
+#MEETING REQUESTS
+###
+
+###
+POST http://localhost:8080/api/meeting/?meetingTitle=SpecifyProject
+
+###
+PUT http://localhost:8080/api/meeting/?meeting_id=4&employee_id=2
+
+###
+GET http://localhost:8080/api/meeting
