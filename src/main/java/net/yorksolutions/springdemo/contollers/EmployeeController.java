@@ -42,7 +42,9 @@ public class EmployeeController {
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
     }
 
+
     static class Message {
+
         public String message;
 
         Message(String message) {

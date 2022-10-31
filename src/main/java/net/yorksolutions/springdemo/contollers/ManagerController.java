@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.*;
 public class ManagerController {
     private final ManagerService service;
 
+
     @Autowired
     public ManagerController(ManagerService service) {
         this.service = service;
@@ -20,6 +21,7 @@ public class ManagerController {
     public void addNewManager(@RequestParam String managersName) {
         service.addNewManager(managersName);
     }
+
 
     @PutMapping
     public void addDirectReport(@RequestParam Long manager_id, @RequestParam Long employee_id) {

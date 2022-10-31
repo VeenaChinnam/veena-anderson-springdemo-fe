@@ -5,7 +5,9 @@ import java.util.ArrayList;
 import java.util.Set;
 
 @Entity
+
 public class Manager {
+
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     public Long id;

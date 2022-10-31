@@ -11,7 +11,6 @@ import java.util.Optional;
 public class EmployeeService {
     private final EmployeeRepository repository;
     private final ManagerService managerService;
-
     @Autowired
     public EmployeeService(EmployeeRepository repository, ManagerService managerService) {
         this.repository = repository;
